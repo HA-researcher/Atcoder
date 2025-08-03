@@ -1,0 +1,10 @@
+初めて知ったこと
+
+print("ABC",end=",")で文末の\nを,に変えられる
+
+print(f"{s}")でｓが変数になる
+
+a = [1, 2, 3]
+b = ["apple", "banana", "cat"]
+c=[a,b]
+print(c)で[[1, 2, 3], ['apple', 'banana', 'cat']]になる
