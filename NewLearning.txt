@@ -12,4 +12,11 @@ print(c)で[[1, 2, 3], ['apple', 'banana', 'cat']]になる
 li = [1, 2, 3, 4]
 a = li.pop()でリスト li の末尾の要素を削除して、その値を取得することができる
 
+li.sort()、li.sort(reverse=False)で昇順
+li.sort(reverse=True)で降順
+
 del li[2]でインデックスの2番目を削除できる（メソッドではない）
+
+print(" ".join(li))  # 半角スペースを区切り文字として結合
+print("".join(li))  # 空文字列を区切り文字として結合
+print("/".join(li))  # スラッシュ(/) を区切り文字として結合
