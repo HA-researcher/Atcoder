@@ -1,0 +1,14 @@
+S=input()
+i=0
+for i in range(len(S)):
+    if S[i:i+5]=="AAAAA":
+      print("A5")
+      i+=5
+    elif S[i:i+5]=="BBBBB":
+      print("B5")
+      i+=5
+    elif S[i:i+5]=="CCCCC":
+      print("C5")
+      i+=5
+    else:
+      i+=1
