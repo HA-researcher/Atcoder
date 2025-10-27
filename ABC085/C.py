@@ -1,7 +1,10 @@
-NM=input().split(" ")
+
+"""NM=input().split(" ")
 N=int(NM[0])
 M=int(NM[1])
-
+mapで1行で受け取れる
+"""
+N,M=map(int,input().split())
 
 
 for i in range(N+1):
