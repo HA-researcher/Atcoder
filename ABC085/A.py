@@ -1,3 +1,9 @@
+"""
 S=input().split("/")
 S[0]=2018
 print(S[0],"/",S[1],"/",S[2],sep="")
+"""
+
+S = input().split("/")
+S[0] = "2018"
+print("/".join(S))
