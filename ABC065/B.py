@@ -1,0 +1,21 @@
+import sys
+N=int(input())
+#i番目を押すとa[i]番目が光る
+a=[]
+for j in range(N):
+    a.append(int(input()))
+#a[k]==2かつ、a[j]==k,a[n]==j,....a[1]==l
+#もしくはa[1]=l,a[l]=h,a[h]=....a[g]==2
+k=1
+SetA=set()
+Count=0
+while Count<N:
+    if a[k-1] in SetA:
+        print("-1")
+        sys.exit()
+    SetA.add(a[k-1])
+    if a[k-1]==2:
+        print(len(SetA))
+        sys.exit()
+    k=a[k-1]
+    Count+=1
