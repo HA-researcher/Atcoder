@@ -4,6 +4,22 @@ N=int(input())
 a=[]
 for j in range(N):
     a.append(int(input()))
+
+current = 1
+count = 0
+
+# N回移動してcurrent=２にたどり着かなければループしているので終了してよい
+for _ in range(N):
+    if current == 2:
+        print(count)
+        sys.exit()
+        
+    current = a[current - 1]
+    count += 1
+    
+print(-1)
+
+"""
 #a[k]==2かつ、a[j]==k,a[n]==j,....a[1]==l
 #もしくはa[1]=l,a[l]=h,a[h]=....a[g]==2
 k=1
@@ -19,3 +35,5 @@ while Count<N:
         sys.exit()
     k=a[k-1]
     Count+=1
+
+"""
