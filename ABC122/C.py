@@ -12,10 +12,4 @@ for _ in range(Q):
     l,r=map(int,input().split())
     l-=1
     r-=1
-    if l-1>=0 and (ATcount[l-1]==ATcount[l]):
-        print(max(ATcount[r]-ATcount[l],0))
-    else:
-        print(max(ATcount[r]-ATcount[l],0))
-
-
-
+    print(max(ATcount[r]-ATcount[l],0))
